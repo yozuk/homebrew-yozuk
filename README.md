@@ -1,2 +1,6 @@
 # homebrew-yozuk
-Homebrew tap
+
+```bash
+brew tap yozuk/yozuk
+brew install zuk
+```
