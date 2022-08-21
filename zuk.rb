@@ -2,8 +2,8 @@ class Zuk < Formula
   desc "Chatbot for programmers"
   homepage "https://yozuk.com/"
   license "MIT"
-  url "https://github.com/yozuk/yozuk/archive/refs/tags/v0.20.1.tar.gz"
-  sha256 "01eaf768afa0c23670c6e2716e7025e942c7050830264c7c6da6b29be4408fd4"
+  url "https://github.com/yozuk/yozuk/archive/refs/tags/v0.22.8.tar.gz"
+  sha256 "088cf48befdceff376864690e6eecdc62af8f5b2432ce3451463f887cb09f6b1"
 
   depends_on "cmake" => :build
   depends_on "rust" => :build
@@ -13,6 +13,6 @@ class Zuk < Formula
   end
 
   test do
-    assert_match '{"version": "0.20.1"}', shell_output("#{bin}/zuk version info")
+    assert_match '{"version": "0.22.8"}', shell_output("#{bin}/zuk version info")
   end
 end
